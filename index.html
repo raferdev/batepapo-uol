@@ -22,26 +22,33 @@
       <img src="png/logo 1.png" alt="logo" />
       <button onclick = "navVisivel()"><ion-icon name="people"></ion-icon></button>
     </header>
+    <div class = "chat">
+      <div class="msg"><div class = "hora">testehora</div><div class = "nome">teste nome</div><div class="textoMsg">testemsg</div></div>
+      <div class="msg"><div class = "hora">testehora</div><div class = "nome">teste nome</div><div class = "para">para </div><div class = "quem">Todos:</div><div class="textoMsg">testemsg</div></div>
+      <div class="msg"><div class = "hora">testehora</div><div class = "nome">teste nome</div><div class = "para">para </div><div class = "quem">Todos:</div><div class="textoMsg">testemsg</div></div>
+    </div>
     <footer>
       <textarea> Escreva aqui... </textarea>
       <button><ion-icon name="paper-plane"></ion-icon></button>
     </footer>
     <nav class="nav">
+      <div class="sidebarExit" onclick="navVisivel()"></div>
       <div class="sidebarContent">
       <div class="sidebarTitle"><p>Escolha um contato <br>para enviar mensagem:</p></div>
       <div class="sidebar"><div class="sidebarLines"><ion-icon name="people"></ion-icon><p class="sidebarTxt">Todos</p></div><ion-icon class="iconCheck" name="checkmark"></ion-icon></div>
-      <div class="sidebarOnlineUser"><div class="sidebarLines"><ion-icon name="people"></ion-icon><p class="sidebarTxt">João</p></div><ion-icon class="iconCheck" name="checkmark"></ion-icon></div>
-      <div class="sidebarOnlineUser"><div class="sidebarLines"><ion-icon name="people"></ion-icon><p class="sidebarTxt">Maria</p></div><ion-icon class="iconCheck" name="checkmark"></ion-icon></div>
+      <div class="sidebarOnlineUser"><div class="sidebarLines"><ion-icon name="person-circle"></ion-icon><p class="sidebarTxt">João</p></div><ion-icon class="iconCheck" name="checkmark"></ion-icon></div>
+      <div class="sidebarOnlineUser"><div class="sidebarLines"><ion-icon name="person-circle"></ion-icon><p class="sidebarTxt">Maria</p></div><ion-icon class="iconCheck" name="checkmark"></ion-icon></div>
       <div class="sidebarVisibilidade"><p>Escolha a visibilidade:</p></div>
-      <div class="sidebar"><div class="sidebarLines"><ion-icon name="people"></ion-icon><p class="sidebarTxt">Público</p></div><ion-icon class="iconCheck" name="checkmark"></ion-icon></div>
-      <div class="sidebar"><div class="sidebarLines"><ion-icon name="people"></ion-icon><p class="sidebarTxt">Reservadamente</p></div><ion-icon class="iconCheck" name="checkmark"></ion-icon></div>
+      <div class="sidebar"><div class="sidebarLines"><ion-icon name="lock-open"></ion-icon><p class="sidebarTxt">Público</p></div><ion-icon class="iconCheck" name="checkmark"></ion-icon></div>
+      <div class="sidebar"><div class="sidebarLines"><ion-icon name="lock-closed"></ion-icon><p class="sidebarTxt">Reservadamente</p></div><ion-icon class="iconCheck" name="checkmark"></ion-icon></div>
       </div>
     </nav>
-    <div class="entrada">
+    <div class="entrada visivel">
       <img src="png/logo 1.png" alt="logo" />
-      <textarea>Digite seu nome</textarea>
-      <button>Entrar</button>
+      <input class="nameInput" name="name" type = "name" placeholder="Digite seu nome" value>
+      <button onclick="entradaVisivel()">Entrar</button>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/script.js"></script>
     <script
       type="module"
