@@ -26,7 +26,7 @@
    </div>
     <footer>
       <input class="msgInput" name="msg" type = "text" placeholder="Digite seu texto..." value>
-      <button onclick="enviarMsg()"><ion-icon name="paper-plane"></ion-icon></button>
+      <button data-identifier="send-message" onclick="enviarMsg()"><ion-icon name="paper-plane"></ion-icon></button>
     </footer>
     <nav class="nav">
       <div class="sidebarExit" onclick="navVisivel()"></div>
@@ -43,7 +43,7 @@
     <div class="entrada visivel">
       <img src="png/logo 1.png" alt="logo" />
       <input class="nameInput" name="name" type = "name" placeholder="Digite seu nome" value>
-      <button onclick="entradaVisivel()">Entrar</button>
+      <button  onclick="entradaVisivel()">Entrar</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/script.js"></script>

@@ -45,7 +45,7 @@ function printarChat(pChatOnline) {
     chatOnlineNovo.forEach(addChat)
 }
 function addChat(msgsChat){
-    listaChat.innerHTML += `<div class="msg"><div class = "hora">${msgsChat.time}</div><div class = "nome">${msgsChat.from}</div><div class = "para">para </div><div class = "quem">${msgsChat.to}:</div><div class="textoMsg">${msgsChat.text}</div></div>`   
+    listaChat.innerHTML += `<div data-identifier="message" class="msg"><div class = "hora">${msgsChat.time}</div><div class = "nome">${msgsChat.from}</div><div class = "para">para </div><div class = "quem">${msgsChat.to}:</div><div class="textoMsg">${msgsChat.text}</div></div>`   
 }
 function aplicarStatus() {
     let status = document.querySelector(".chat")
