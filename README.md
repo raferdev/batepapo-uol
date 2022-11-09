@@ -31,7 +31,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This project i use to training the basic front-end contents and the integration with one API. I had to integrate logic with CSS styles and Javascript DOM to make possible the interaction on live chat, and study the API to send and pull information.
+This project i use to training the basic front-end contents and the integration which one API. I had to integrate logic with CSS styles and Javascript DOM to make possible the interaction on live chat, and study the API to send and pull information.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
